@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //02-01.html
+    //기본 자료형
+    //자료(data) - 프로그래밍에서 프로그램이 처리할 수 있는 모든 것
+    //자료형(data type) - 자료 형태에 따라 나눠 놓은 것
+    //가장 기본적이면서도 많이 사용하는 자료형은
+    //숫자(number),문자열(string),불(boolean) 자료형이다
+
+    //문자열 자료형
+    //문자들의 집합을 문자열이라고 한다
+    //문자가 하나든 여러 개든 모두 문자열 자료형
+
+    //문자열 만들기
+    //자바스크립트 2가지 방법으로 문자열을 생성
+    //1. 큰따옴표를 사용
+    //2. 작은따옴표를 사용
+    console.log("안녕하세요")
+    console.log('안녕하세요')
+
+    //내부에 작은따옴표를 사용하고 싶다면
+    //외부에 큰따옴표를 사용하고
+    //반대로 내부에 큰따옴표를 사용하고 싶으면
+    //외부에 작은따옴표를 사용한다
+    console.log('This is "string"')
+    console.log("This is 'string'")
+    console.log("<img src='apple.jpg'>")
+    //이스케이프 문자(\)를 사용하여 따옴표를 문자 그대로 사용할 수 있다
+    console.log('This is \'string\'')
+    console.log('This is \"string\"')
+    //이스케이프 문자의 여러 가지 특수 기능
+    //\n : 줄바꿈을 의미한다
+    //\t : 탭을 의미한다
+    //\\ : 역슬래시(\) 그 자체를 의미한다
+    console.log("동해물과 백두산이 \n마르고 닳도록")
+    //역슬래시를 나타내려면 \\형태로 사용해야 한다
+    console.log("\\ \\ \\ \\")
+
+    //문자열 연산자
+    //덧셈 기호(+)를 사용하면 문자열을 연결할 수 있다
+    //덧셈 기호를 문자열 연결 연산자라고 부른다
+    //문자열 + 문자열 -> 문자열 연결 연산자
+    console.log("가나다" + "라마" + "바사아" + "자차카타")
+
+    //문자열 내부의 문자 하나를 선택할 때는 "문자 선택 연산자"를 사용
+    //문자열[인덱스값]
+    console.log("안녕하세요[0]")
+    console.log("안녕하세요[1]")
+    console.log("안녕하세요[2]")
+    
+    //문자열 길이 구하기
+    //문자열 내부의 문자 개수를 문자열 길이(length)
+    //length 속성을 사용한다
+    //인스턴스 변수를 가르키는 많은 용어들
+    //속성 properties, 필드 field, 인스턴스 변수
+    console.log("안녕하세요".length)
+    console.log("".length)
+
+    //구문 오류(컴파일 에러)
+    //console.log("This is" string "")
+
+    //숫자 자료형
+    //자바스크립트는 소수점이 있는 숫자와 없는 숫자를 모두 같은 자료형으로 인식한다
+    console.log(42)
+    console.log(42.42)
+    console.log(42.1245634)
+
+    //숫자 연산자
+    //숫자 자료형은 숫자 연산자로 기본적인 사칙 연산을  할 수 있다
+    //+, -, *, / - 더하기, 빼기, 곱하기, 나누기
+    console.log(24 + 12)
+    console.log(24 - 12)
+    console.log(24 * 12)
+    console.log(24 / 12)
+
+    //나머지 연산 - % 연산자
+    //좌변을 우변으로 나눈 나머지를 출력
+    console.log(10 % 2)
+    console.log(10 % 3)
+    console.log(10 % 4)
+
+  </script>
+</body>
+</html>
