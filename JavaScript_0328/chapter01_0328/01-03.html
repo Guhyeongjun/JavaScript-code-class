@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="d1"></div>
+  <script>
+    //01-03.html
+    //전체적인 코드가 이해 되지 않을 테니
+    //복합 대입 연산자를 활용하는 부분만 확인 해주세요
+    let list = ""
+    list += "<ul>"
+    list += "<li>Hello</li>"
+    list += "<li>Java script..!</li>"
+    list += "</ul>"
+    document.querySelector("#d1").innerHTML = list
+
+    //증감 연산자
+    //변수 ++ , 변수 --, ++변수, --변수
+    //prefix(전위), postfix(후위)
+    let number = 10;
+    console.log(number++) //10
+    console.log(++number) //12
+    console.log(number--) //12
+    console.log(--number) //10
+
+    //undefined 자료형
+    if(typeof (number)!== undefined){
+      
+    }
+    //상수와 변수로 선언하지 않은 식별자
+    //=>undefined 자료형이 나옵니다
+    //console.log(abc)
+    console.log(`문자`)
+    console.log(typeof(`문자열 타입`))
+
+    //값이 없는 변수 => undefined 자료형이 나옵니다
+    //변수를 선언하면서 값을 지정하지 않은 경우
+    //상수는 선언할 때 반드시 값을 지정해야 하므로
+    //값이 없는 상수는 존재하지 않는다
+    let v
+    console.log(v)
+  </script>
+</body>
+</html>

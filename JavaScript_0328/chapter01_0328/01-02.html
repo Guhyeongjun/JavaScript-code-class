@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //01-02.html
+    //상수와 변수
+    //상수 - 항상 같은 수라는 의미로 값에 이름을 한 번 붙이면 값을 수정할 수 없다
+    //변수 - 변할 수 있는 수로 값을 수정할 수 있다
+
+    //실제로는 상수를 훨씬 많이 사용한다
+    //저장 효율(성능)이 좋다
+
+    //상수(constant)
+    //const 이름 = 값
+    const pi = 3.141592
+    console.log(pi)
+    console.log(pi * 4)
+    const r = 10
+    console.log(2 * pi * r)
+    console.log(pi * r * r)
+    //숫자가 들어 있는 상수는 숫자 연산
+    //문자열이 들어 있는 상수는 문자열 연산
+
+    //특정한 이름의 상수는 한 파일에서 한 번만 선언 할 수 있다
+    const name = "name 이라는 상수를 선언"
+    //const name = "name 이라는 상수를 한번 더 선언"
+    //Identifier 'name' has already been declared
+    //식별자 name은 이미 사용되고 있다라는 오류(구문 오류)
+
+    //상수를 선언(정의)할 때 반드시 값을 함꼐 지정해줘야 한다
+    //값을 처음 지정 - 초기화
+    //상수는 선언과 초기화를 동시에 해야 한다
+
+    //한 번 선언된 상수의 자료는 변경할 수 없다
+    const studentName = "김자바"
+    //studentName = "김스크립트"
+    //Assignment to constant variable.
+    //값을 변경하고 싶을 때는 변수를 사용해야 한다
+
+    //변수
+    //변수를 만들 때는 let키워드를 사용한다
+    //let 이름 = 값
+    let pi2 = 3.141592
+    console.log(pi2)
+    pi2 = 10
+    console.log(pi2)
+    console.log(pi2 * 10)
+
+    //변수의 값을 변경할 떄는 변수 이름 뒤에 = 기호를 입력하고
+    //값을 넣어 주면 된다
+
+    //특정한 이름의 변수는 한 파일에서 한 번만 선언할 수 있다
+    let name1 = "name1이라는 이름의 변수를 선언"
+    //let name1 = "name1이라는 이름의 변수를  한 번 더 선언"
+    //Identifier 'name1' has already been declared
+
+    //var 키워드
+    var name2 = "이름"
+    //변수를 생성할 수 있는 키워드
+    //과거에 사용하던 키워드
+    //var키워드는 변수를 중복해서 선언할 수 있다는 위험성
+
+    //복합 대입 연산자
+    // += : 기존 변수의 값에 값을 더한다
+    // -=, *=, /=, %=
+    let a = 0
+    a = a + 1
+    a += 1
+    console.log(a)
+
+    
+  </script>
+</body>
+</html>
