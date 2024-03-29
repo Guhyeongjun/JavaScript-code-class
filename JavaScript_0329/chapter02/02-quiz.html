@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //min()함수
+    //배열 또는 숫자 나열을 매개변수로 넣어도 다 동작하게 하게 싶다
+    //min(배열) 배열 내부에서 최솟값을 찾아주는 함수
+    //min(숫자,숫자,...)형태로 매개변수를 넣으면
+    //숫자들 중에서 최솟값을 찾아주는 함수
+    //매개변수로 들어온 자료형이 배열인지 숫자인지 확인해야 한다
+    //숫자 자료형은 typeof 연산자를 활용
+    //배열에 typeof연산자를 사용하면 
+    //object(객체)라는 결과가 나온다
+    //Array.isArray()메소드를 활용, 배열이면 true, 아니면 false
+    //매개변수의 자료형에 따라 다르게 작동하는 min()함수를 만들어 보세요 
+    
+   
+    console.log(`확인문제 1`)
+    function multiplyAll(A, B){
+      let sum = 1
+      for(let i = A; i <= B; i++){
+          sum *= i
+          }
+          return sum
+    }
+    console.log(multiplyAll(1,2))
+    console.log(multiplyAll(1,3))
+
+    console.log(`확인문제 2-1`) 
+    const max1 = function(array){
+      let output = array[0]
+      for(const i of array){
+        if(i > output){
+          output = i
+        }
+      }
+      return output
+    }
+    console.log(max1([1,2,3,4]))
+
+    console.log(`확인문제 3-2`)
+    const max2 = function(...array){
+      let output = array[0]
+      for(const i of array){
+        if(i > output){
+          output = i
+        }
+      }
+      return output
+    }
+    console.log(max2(1,2,3,4))
+
+    const max3 = function(arr,...array){
+      let output = array[0]
+      for(const i of array){
+        if(i > output){
+          output = i
+        }
+      }
+      return output
+    }
+    console.log(max3(1,2,3,4))
+    console.log(max3([1,2,3,4]))
+   
+
+   
+  </script>
+</body>
+</html>
