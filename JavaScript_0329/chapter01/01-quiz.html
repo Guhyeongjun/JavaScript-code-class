@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(`확인문제 1번
+                  1. "3"
+                  2. "바나나"
+                  3. 32`) 
+    
+    console.log(`확인문제 2번
+                  4
+                  5
+                  `) 
+    
+
+    console.log(`확인문제 1번
+                  for in 반복문
+                  0
+                  1
+                  2
+                  3
+                  for of 반복문
+                  사과
+                  배
+                  귤
+                  바나나`) 
+
+
+    console.log(`확인문제 2번
+                  반복문 안에 const 대신 let 사용`) 
+    
+
+    console.log(`확인문제 3번`) 
+    let output = 0
+    output = 1
+    for(let i = 1; i <= 100; i++){
+        output = output * i
+    }
+    console.log(`1~100의 숫자를 모두 곱하면, ${output}입니다.`)
+    
+    console.log(`확인문제 4번`)
+    let output1 = ''
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 5; j > i; j--) {
+        output1 += ' '
+    }
+    for (let k = 0; k < 2 * i - 1; k++) {
+        output1 += '*'
+    }
+        output1 += '\n'
+    }
+
+    for (let i = 4; i > 0; i--) {
+      for (let j = 5; j > i; j--) {
+        output1 += ' '
+    }
+    for (let k = 0; k < 2 * i - 1; k++) {
+        output1 += '*'
+    }
+        output1 += '\n'
+    }
+
+    console.log(output1)
+  </script>
+</body>
+</html>
