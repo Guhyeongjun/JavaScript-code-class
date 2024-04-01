@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //01-02.html
+    //함수 고급
+    //함수도 하나의 객체
+    //함수도 1등 시민
+    //람다 또는 익명함수를 최초로 쓴 프로그래밍 언어다
+    //함수는 객체 및 자료이므로 변수에 할당할 수 있고,
+    //함수를 함수의 매개변수로 전달해서 활용할 수 있다
+
+    //콜백 함수
+    //매개변수로 함수를 전달하는 함수를 콜백 함수(callback)라고 한다
+
+    //콜백 함수 : 선언적 함수 사용하기
+    function callThreeTime(callback){
+      for(let i =  0; i < 3; i++){
+        callback(i)
+      }
+    }
+
+    //콜백 함수의 매개변수 이름은 변수 이름 규칙에만 맞으면 된다
+
+    //콜백 함수를 활용하는 함수 : map()
+    //map() 메소드도 배열이 갖고 있는 함수
+    //map()메소드는 콜백 함수에서 리턴한 값들을
+    //기반으로 새로운 배열을 만드는 함수
+    let numbers = [324,24,124,134]
+
+    //모든 배열의 요소를 제곱한 새로운 배열을 만드기
+    numbers = numbers.map(function(value,index,array){
+      return value * value
+    })
+    console.log(numbers)
+
+    //콜백 함수를 활용하는 함수 : filter()
+    //filter()메소드도 배열이 갖고 있는 함수
+    //filter()메소드는 콜백 함수에서 리턴하는 값이
+    //true인 것들만 모아서 새로운 배열을 만드는 함수
+
+    //원래 배열에서 짝수만 추출해서 새로운 배열 생성
+    const nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+
+    let makeArrWithFor = []
+    for(let num of nums){
+      if(num % 2 === 0){
+        makeArrWithFor.push(num)
+      }
+    }
+    console.log(makeArrWithFor)
+
+    //함수형 프로그래밍 방식
+    makeArrWithFor.filter(function(v){
+      return v % 2 === 0
+    })
+
+    //화살표 함수, 람다
+    /**
+     * (매개변수) => {
+     * 
+     * }
+    */
+   //리턴문이 한문장일 때 return 키워드와 {}중괄호 생략 가능
+   nums.forEach(v => console.log(v))
+   nums.map(v => v*v)
+
+   //메소드 체이닝
+   //메소드를 연속적으로 사용
+   nums.filter(v=> v % 2 === 0)
+      .map(v => v*v)
+      .forEach(v => console.log(v))
+
+   //forEach()함수에 매개변수로
+   //console.log메소드 자체를 넣을 수 있다
+   nums.forEach(console.log)
+
+   //매개변수가 둘 이상의 람다
+   //람다식에서 매개변수 하나 일때만 소괄호 생략 가능
+   nums.forEach((v,i) => console.log(`${i}번째 요소 : ${v}`))
+
+  </script>
+</body>
+</html>

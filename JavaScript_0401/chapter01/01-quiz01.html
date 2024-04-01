@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //01-quiz.html
+    let numbers = [273,25,75,52,103,32,57,24,76]
+
+    // (1) 홀수만 추출
+    numbers = numbers.filter(v => v % 2 === 1)
+
+    // (2) 100 이하의 수만 추출
+    numbers = numbers.filter(v => v <= 100)
+
+    // (3) 5로 나눈 나머지가 0인 수만 추출
+    numbers = numbers.filter(v => v % 5 === 0)
+    console.log(numbers)
+
+    //결과 : [25,75]
+
+    
+  </script>
+</body>
+</html>
