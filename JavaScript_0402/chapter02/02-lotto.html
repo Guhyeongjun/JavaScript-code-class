@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let nums = []
+    let b = true
+    while(nums.length < 6){
+      let num = Math.floor(Math.random * 45 + 1)
+      //중복 검사
+      
+      for(let n of nums){
+      if(n === num){
+        b = false
+      }
+    }
+    if(true){
+      nums.push(num)
+      b = !b
+    }
+  }
+  console.log(nums)
+  </script>
+</body>
+</html>

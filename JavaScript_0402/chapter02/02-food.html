@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let food = ["1번식당","2번식당","3번식당","4번식당","5번식당","6번식당","7번식당","8번식당"]
+    let sfood = []
+    while(sfood.length < 3){
+        let num = (Math.random() * (food.length - 1)).toFixed()
+        if(!sfood.includes(food[num])){ // 중복 제거
+          sfood.push(food[num])
+        }
+    }
+    console.log(sfood)
+  </script>
+</body>
+</html>

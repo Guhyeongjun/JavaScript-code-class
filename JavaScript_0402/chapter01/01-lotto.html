@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //여러 기본 객체들의 메소드를 이용해서 로또 번호 생성기 프로그램을 작성하세요
+
+    //lottoArr 배열에 자동으로 번호 6개 넣기
+    let lottoArr = []
+    while(lottoArr.length < 6){
+        let lottoNum = ((Math.random() * 45) + 1).toFixed()
+        if(!lottoArr.includes(lottoNum)){ // 중복 제거
+          lottoArr.push(lottoNum)
+        }
+    }
+    console.log(`로또 번호 : [${lottoArr}]`)
+  </script>
+</body>
+</html>
